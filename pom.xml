@@ -7,6 +7,7 @@
     <groupId>com.opencredo.test.automation.grid</groupId>
     <artifactId>test-automation-grid</artifactId>
     <version>0.1.0-SNAPSHOT</version>
+
     <name>com.opencredo.test.automation.grid:test-automation-grid</name>
     <description>Project for the test automation with selenium grid</description>
 
@@ -23,6 +24,9 @@
     <profiles>
         <profile>
             <id>parallel-acceptance-tests</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <build>
                 <plugins>
                     <plugin>
