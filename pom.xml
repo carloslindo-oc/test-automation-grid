@@ -39,6 +39,7 @@
                         <version>${surefire.maven.plugin.version}</version>
                         <executions>
                             <execution>
+                                <id>-ui-acceptance-test</id>
                                 <phase>integration-test</phase>
                                 <goals>
                                     <goal>test</goal>
