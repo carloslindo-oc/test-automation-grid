@@ -40,10 +40,6 @@ public class SharedDriver extends EventFiringWebDriver {
                 case "firefox":
                     try {
                         DesiredCapabilities capability = DesiredCapabilities.firefox();
-                        System.out.println(capability.getBrowserName());
-                        System.out.println(capability.getVersion());
-                        System.out.println(capability.getPlatform());
-                        System.out.println(defaultHubUrl);
                         REAL_DRIVER = new RemoteWebDriver(new URL(defaultHubUrl), capability);
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
@@ -52,7 +48,6 @@ public class SharedDriver extends EventFiringWebDriver {
                 case "chrome":
                     try {
                         DesiredCapabilities capability = DesiredCapabilities.chrome();
-                        System.out.println(capability.getBrowserName());
                         REAL_DRIVER = new RemoteWebDriver(new URL(defaultHubUrl), capability);
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
