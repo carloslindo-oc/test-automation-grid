@@ -1,7 +1,5 @@
 package com.opencredo.ui.acceptance.test.config.webdriver;
 
-import com.opencredo.ui.acceptance.test.config.Browser;
-import com.opencredo.ui.acceptance.test.config.spring.TestConfig;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
